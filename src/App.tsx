@@ -1,9 +1,9 @@
-import React from 'react';
+import Header from "./components/Header";
 
 const App = () => {
   return (
     <div>
-      <p className='font-montserrat'>Sarah</p>
+      <Header />
     </div>
   );
 };

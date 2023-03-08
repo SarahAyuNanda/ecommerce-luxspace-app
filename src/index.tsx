@@ -1,9 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './assets/styles/tailwind.css';
 import App from './App';
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 import reportWebVitals from './reportWebVitals';
+import './assets/styles/tailwind.css';
+import './utils/18next/i18n';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
