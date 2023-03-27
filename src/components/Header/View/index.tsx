@@ -11,7 +11,9 @@ const Header = () => {
         <div className='flex flex-row justify-between items-center'>
           {/* ********** LOGO ********** */}
           <div className='flex items-center w-1/2'>
-            <img src={LuxSpaceLogo} alt='luxspace-logo' />
+            <a href="/" className=''>
+              <img src={LuxSpaceLogo} alt='luxspace-logo' />
+            </a>
           </div>
 
           {/* ********** NAVIGATION BAR ********** */}
