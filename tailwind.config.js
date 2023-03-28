@@ -7,6 +7,9 @@ module.exports = {
     extend: {
       fontFamily: {
         'montserrat': ['Montserrat', ...defaultTheme.fontFamily.sans]
+      },
+      boxShadow: {
+        'light': '0px 10px 10px -10px rgba(33, 35, 38, 0.1)'
       }
     },
   },

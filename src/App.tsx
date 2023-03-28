@@ -2,7 +2,7 @@ import Header from "components/Header/View";
 
 const App = () => {
   return (
-    <div>
+    <div className='container h-screen'>
       <Header />
     </div>
   );
