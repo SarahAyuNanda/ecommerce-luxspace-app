@@ -8,9 +8,12 @@ module.exports = {
       fontFamily: {
         'montserrat': ['Montserrat', ...defaultTheme.fontFamily.sans]
       },
+      colors: {
+        'orchid-pink': '#F6C7D6'
+      },
       boxShadow: {
-        'light': '0px 10px 10px -10px rgba(33, 35, 38, 0.1)'
-      }
+        'light': '-4px 9px 25px -6px rgba(0, 0, 0, 0.1)'
+      },
     },
   },
   plugins: [require('tailwindcss'), require('postcss'), require('autoprefixer')],
