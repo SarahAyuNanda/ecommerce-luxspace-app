@@ -1,9 +1,9 @@
-import Header from "components/Header/View";
+import HeaderView from "components/Header/View";
 
 const App = () => {
   return (
     <div className='container h-screen'>
-      <Header />
+      <HeaderView />
     </div>
   );
 };
