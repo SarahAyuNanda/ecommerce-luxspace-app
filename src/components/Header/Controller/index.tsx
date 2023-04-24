@@ -9,10 +9,10 @@ const HeaderController = () => {
   const [isShowMenu, setIsShowMenu] = useState(false)
 
   const translation = useMemo(() => ({
-    showcase: t('showcase'),
-    catalog: t('catalog'),
-    delivery: t('delivery'),
-    rewards: t('rewards'),
+    showcase: t('SHOWCASE'),
+    catalog: t('CATALOG'),
+    delivery: t('DELIVERY'),
+    rewards: t('REWARDS'),
   }), [t])
 
   // -------------------- CONSTRUCT DATA --------------------

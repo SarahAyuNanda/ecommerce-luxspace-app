@@ -21,7 +21,7 @@ const SidemenuView = ({ isOpen = false, data, onClose }: ISidemenuProps) => {
         <div className='flex flex-col justify-start items-start w-full mt-8 border-gray-600'>
           {data.map(item => (
             <button key={item.label} className='w-full focus:outline-none hover:bg-orchid-pink hover:text-white rounded ease-in-out duration-150'>
-              <a href={item.link} className='flex justify-start items-start flex-row gap-5 p-3'>
+              <a href={item.link} className='flex justify-start items-start flex-row gap-5 p-3 font-montserrat'>
                 {item.icon}
                 <p>{item.label}</p>
               </a>
