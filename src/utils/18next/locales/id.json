@@ -1,7 +1,11 @@
 {
-  "luxspace": "LuxSpace",
-  "showcase": "Showcase",
-  "catalog": "Katalog",
-  "delivery": "Pengiriman",
-  "rewards": "Hadiah"
+  "LUXSPACE": "LuxSpace",
+  "SHOWCASE": "Showcase",
+  "CATALOG": "Katalog",
+  "DELIVERY": "Pengiriman",
+  "REWARDS": "Hadiah",
+  "EXPLORE_NOW": "Jelajahi Sekarang",
+
+  "CONTENT.HERO.TITLE": "Ruangan yang Anda Impikan",
+  "CONTENT.HERO.SUBTITLE": "Kami menyediakan furniture berkelas yang membuat ruangan terasa homey"
 }

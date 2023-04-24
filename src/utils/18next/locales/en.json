@@ -1,7 +1,11 @@
 {
-  "luxspace": "LuxSpace",
-  "showcase": "Showcase",
-  "catalog": "Catalog",
-  "delivery": "Delivery",
-  "rewards": "Rewards"
+  "LUXSPACE": "LuxSpace",
+  "SHOWCASE": "Showcase",
+  "CATALOG": "Catalog",
+  "DELIVERY": "Delivery",
+  "REWARDS": "Rewards",
+  "EXPLORE_NOW": "Explore Now",
+
+  "CONTENT.HERO.TITLE": "The Room You've Dreaming",
+  "CONTENT.HERO.SUBTITLE": "We provide classy furniture that makes the room feel homey"
 }
