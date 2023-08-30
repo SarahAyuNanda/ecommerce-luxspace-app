@@ -1,3 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* --------------------------------- CUSTOM STYLES --------------------------------- */
+@layer components {
+  .btn-filled {
+    @apply bg-orchid-pink text-neutral-800 hover:bg-tuscany hover:text-white
+  }
+
+  .btn-outlined {
+    @apply bg-white text-orchid-pink
+  }
+
+  .btn-text {
+    @apply bg-transparent text-neutral-800
+  }
+
+  .btn-plain {
+    @apply rounded
+  }
+
+  .btn-rounded {
+    @apply rounded-full
+  }
+}
