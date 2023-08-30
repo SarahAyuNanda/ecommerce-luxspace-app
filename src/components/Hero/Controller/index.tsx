@@ -2,6 +2,7 @@ import { useMemo } from "react"
 import { useTranslation } from "react-i18next"
 
 const HeroController = () => {
+  /* ---------------------------------- CUSTOM HOOK ---------------------------------- */
   const { t } = useTranslation()
 
   const translation = useMemo(() => ({
@@ -10,6 +11,7 @@ const HeroController = () => {
     explore_now: t('EXPLORE_NOW')
   }), [t]) 
 
+  /* ------------------------------------ RETURN ------------------------------------- */
   return {
     translation
   }
