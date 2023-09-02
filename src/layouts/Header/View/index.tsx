@@ -1,7 +1,7 @@
 import LuxSpaceLogo from 'assets/images/luxspace.png';
-import HeaderController from 'components/Header/Controller';
 import NavigationBarView from 'components/NavigationBar/View';
-import SidemenuView from 'components/Sidemenu/View';
+import HeaderController from 'layouts/Header/Controller';
+import SidemenuView from 'layouts/Sidemenu/View';
 
 const HeaderView = () => {
   const controller = HeaderController();

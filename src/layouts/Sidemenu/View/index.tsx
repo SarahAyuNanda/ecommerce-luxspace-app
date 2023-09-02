@@ -1,4 +1,4 @@
-import ISidemenuProps from 'components/Sidemenu/Model';
+import ISidemenuProps from "layouts/Sidemenu/Model";
 
 const SidemenuView = ({ isOpen = false, data, onClose }: ISidemenuProps) => {
   return (

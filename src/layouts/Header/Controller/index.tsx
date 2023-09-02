@@ -1,6 +1,6 @@
+import INavigationItem from 'layouts/Header/Model';
 import { useMemo, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import INavigationItem from 'components/Header/Model';
 
 const HeaderController = () => {
   /* ---------------------------------- CUSTOM HOOK ---------------------------------- */

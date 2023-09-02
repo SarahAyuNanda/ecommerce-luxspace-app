@@ -1,4 +1,4 @@
-import INavigationItem from "components/Header/Model"
+import INavigationItem from "layouts/Header/Model"
 
 interface INavigationBarProps {
   data: INavigationItem[]

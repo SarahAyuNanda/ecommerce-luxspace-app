@@ -1,5 +1,5 @@
-import HeaderView from "components/Header/View";
 import HeroView from "components/Hero/View";
+import HeaderView from "layouts/Header/View";
 
 const App = () => {
   return (
