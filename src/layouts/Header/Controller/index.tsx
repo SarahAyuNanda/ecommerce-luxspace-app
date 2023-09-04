@@ -41,10 +41,10 @@ const HeaderController = () => {
   )
 
   const navigationItemList: INavigationItem[] = [
-    { label: translation.showcase, link: 'showcase', icon: <ShowcaseIcon /> },
-    { label: translation.catalog, link: 'catalog', icon: <CatalogIcon /> },
-    { label: translation.delivery, link: 'delivery', icon: <DeliveryIcon /> },
-    { label: translation.rewards, link: 'rewards', icon: <RewardIcon /> },
+    { label: translation.showcase, path: '/showcase', icon: <ShowcaseIcon /> },
+    { label: translation.catalog, path: '/catalog', icon: <CatalogIcon /> },
+    { label: translation.delivery, path: '/delivery', icon: <DeliveryIcon /> },
+    { label: translation.rewards, path: '/rewards', icon: <RewardIcon /> },
   ]
 
   /* ------------------------------- HANDLER FUNCTION -------------------------------- */

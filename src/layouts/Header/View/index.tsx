@@ -23,7 +23,7 @@ const HeaderView = () => {
 
           {/* ----------------------------------- ICON MENU ----------------------------------- */}
           <div className='flex justify-end items-end w-auto z-0'>
-            <ul className='items-center flex'>
+            <ul className='flex items-center'>
               {/* ---------------------------------- BURGER MENU ---------------------------------- */}
               <li className='ml-6 block md:hidden p-1 rounded-full ease-in-out duration-300 hover:bg-gray-100 active:bg-gray-100 text-neutral-700'>
                 <button id='burger-menu' className='relative flex items-center justify-center w-8 h-8 focus:outline-none' onClick={controller.onShowHideNavigationMenu}>

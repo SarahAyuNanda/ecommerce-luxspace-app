@@ -1,6 +1,6 @@
 interface INavigationItem {
   label: string;
-  link: string; 
+  path: string; 
   icon?: JSX.Element;
 }
 
