@@ -1,5 +1,5 @@
 import INavigationItem from 'layouts/Header/Model';
-import { useMemo, useState } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
 const HeaderController = () => {
@@ -7,6 +7,7 @@ const HeaderController = () => {
   const { t } = useTranslation()
 
   const [isShowMenu, setIsShowMenu] = useState(false)
+  const [isOnTopPage, setIsOnTopPage] = useState(true)
 
   const translation = useMemo(() => ({
     showcase: t('SHOWCASE'),
@@ -14,6 +15,10 @@ const HeaderController = () => {
     delivery: t('DELIVERY'),
     rewards: t('REWARDS'),
   }), [t])
+
+  useEffect(() => {
+    window.addEventListener('scroll', e => onHandleScroll(e))
+  }, [])
 
   /* -------------------------------- CONSTRUCT DATA --------------------------------- */
   const ShowcaseIcon = () => (
@@ -52,15 +57,21 @@ const HeaderController = () => {
     setIsShowMenu(!isShowMenu)
   }
 
+  const onHandleScroll = (e: Event) => {
+    let position = e.currentTarget as Window
+    setIsOnTopPage(position.scrollY === 0)
+  }
+
   /* ------------------------------------ RETURN ------------------------------------- */
   return {
     translation,
     isShowMenu,
-    setIsShowMenu,
+    isOnTopPage,
 
     navigationItemList,
 
     onShowHideNavigationMenu,
+    setIsShowMenu,
   };
 };
 
