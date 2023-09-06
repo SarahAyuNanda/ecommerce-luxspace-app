@@ -2,7 +2,7 @@ import ISidemenuProps from "layouts/Sidemenu/Model";
 
 const SidemenuView = ({ isOpen = false, data, onClose }: ISidemenuProps) => {
   return (
-    <aside className={`fixed top-0 right-0 z-10 md:hidden w-screen h-screen flex justify-between items-start flex-row transition ease-in-out duration-700 ${isOpen ? '-translate-y-full' : 'translate-y-0'}`}>
+    <aside className={`fixed top-0 right-0 z-10 md:hidden w-screen h-screen flex justify-between items-start flex-row transition ease-in-out duration-700 ${isOpen ? 'translate-y-0' : '-translate-y-full'}`}>
       <div className='relative w-full h-screen py-10 px-7 bg-white shadow-light'>
         {/* --------------------------------- CLOSE BUTTON ---------------------------------- */}
         <button id='close-menu' className='fixed top-0 right-0 m-5 flex z-50 items-center justify-center w-9 h-9 p-1 rounded-full ease-in-out duration-300 hover:bg-gray-100 active:bg-gray-100 text-neutral-700' onClick={onClose}>

@@ -54,7 +54,7 @@ const HeaderController = () => {
 
   /* ------------------------------- HANDLER FUNCTION -------------------------------- */
   const onShowHideNavigationMenu = () => {
-    setIsShowMenu(!isShowMenu)
+    setIsShowMenu(current => !current)
   }
 
   const onHandleScroll = (e: Event) => {

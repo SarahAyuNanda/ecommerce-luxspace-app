@@ -5,12 +5,10 @@ const HeroView = () => {
   const controller = HeroController()
 
   return (
-    <section className='flex items-center h-[90vh] w-full'>
-      <div className='flex flex-col justify-center items-center w-full px-8'>
-        <h1 className="text-3xl md:text-4xl leading-tight font-semibold font-montserrat text-neutral-700">{controller.translation.title}</h1>
-        <h2 className="px-8 text-base  md:px-0 md:text-lg my-6 tracking-wide font-montserrat text-neutral-700">{controller.translation.subtitle}</h2>
-        <ButtonView label={controller.translation.explore_now} variant='filled' type='rounded' onClick={() => console.log('click explore now')} />
-      </div>
+    <section className='flex flex-col justify-center items-center h-[90vh] w-full'>
+      <h1 className="text-3xl md:text-4xl leading-tight font-semibold font-montserrat text-neutral-700">{controller.translation.title}</h1>
+      <h2 className="px-8 text-base  md:px-0 md:text-lg my-6 tracking-wide font-montserrat text-neutral-700">{controller.translation.subtitle}</h2>
+      <ButtonView label={controller.translation.explore_now} variant='filled' type='rounded' onClick={() => console.log('click explore now')} />
     </section>
   );
 };
