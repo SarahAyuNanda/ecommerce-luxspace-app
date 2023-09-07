@@ -8,7 +8,7 @@ const HeaderView = () => {
 
   return (
     <header className={`fixed top-0 left-0 w-full z-20 transition-all duration-300 ${controller.isOnTopPage ? 'bg-transparent' : 'bg-white shadow-lg'}`}>
-      <div className='container mx-auto py-5'>
+      <div className='container mx-auto py-5 px-4 md:px-0'>
         <div className='flex flex-row justify-between items-center'>
           {/* ------------------------------------- LOGO -------------------------------------- */}
           <div className='flex items-center w-1/2'>
