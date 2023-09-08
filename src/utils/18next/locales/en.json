@@ -1,11 +1,27 @@
 {
   "LUXSPACE": "LuxSpace",
-  "SHOWCASE": "Showcase",
-  "CATALOG": "Catalog",
-  "DELIVERY": "Delivery",
-  "REWARDS": "Rewards",
-  "EXPLORE_NOW": "Explore Now",
 
   "CONTENT.HERO.TITLE": "The Room You've Dreaming",
-  "CONTENT.HERO.SUBTITLE": "We provide classy furniture that makes the room feel homey"
+  "CONTENT.HERO.SUBTITLE": "We provide classy furniture that makes the room feel homey",
+  "CONTENT.HERO.EXPLORE_NOW": "Explore Now",
+
+  "HEADER.SHOWCASE": "Showcase",
+  "HEADER.CATALOG": "Catalog",
+  "HEADER.DELIVERY": "Delivery",
+  "HEADER.REWARDS": "Rewards",
+
+  "FOOTER.OVERVIEW": "Overview",
+  "FOOTER.SHIPPING": "Shipping",
+  "FOOTER.REFUND": "Refund",
+  "FOOTER.PROMOTION": "Promotion",
+  "FOOTER.COMPANY": "Company",
+  "FOOTER.ABOUT": "About",
+  "FOOTER.CAREER": "Career",
+  "FOOTER.CONTACT_US": "Contact Us",
+  "FOOTER.EXPLORE": "Explore",
+  "FOOTER.TERM_CONDITION": "Terms & Conditions",
+  "FOOTER.PRIVACY_POLICY": "Privacy Policy",
+  "FOOTER.DEVELOPER": "Developer",
+  "FOOTER.SPECIAL_LETTER": "Special Letter",
+  "FOOTER.COPYRIGHT": "Copyright 2023 • All Rights Reserved LuxSpace"
 }

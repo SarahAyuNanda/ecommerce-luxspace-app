@@ -1,11 +1,27 @@
 {
   "LUXSPACE": "LuxSpace",
-  "SHOWCASE": "Showcase",
-  "CATALOG": "Katalog",
-  "DELIVERY": "Pengiriman",
-  "REWARDS": "Hadiah",
-  "EXPLORE_NOW": "Jelajahi Sekarang",
 
   "CONTENT.HERO.TITLE": "Ruangan yang Anda Impikan",
-  "CONTENT.HERO.SUBTITLE": "Kami menyediakan furniture berkelas yang membuat ruangan terasa homey"
+  "CONTENT.HERO.SUBTITLE": "Kami menyediakan furniture berkelas yang membuat ruangan terasa homey",
+  "CONTENT.HERO.EXPLORE_NOW": "Jelajahi Sekarang",
+
+  "HEADER.SHOWCASE": "Showcase",
+  "HEADER.CATALOG": "Katalog",
+  "HEADER.DELIVERY": "Pengiriman",
+  "HEADER.REWARDS": "Hadiah",
+
+  "FOOTER.OVERVIEW": "Ringkasan",
+  "FOOTER.SHIPPING": "Pengiriman",
+  "FOOTER.REFUND": "Pengembalian Dana",
+  "FOOTER.PROMOTION": "Promosi",
+  "FOOTER.COMPANY": "Perusahaan",
+  "FOOTER.ABOUT": "Tentang",
+  "FOOTER.CAREER": "Karir",
+  "FOOTER.CONTACT_US": "Hubungi Kami",
+  "FOOTER.EXPLORE": "Jelajahi",
+  "FOOTER.TERM_CONDITION": "Syarat & Ketentuan",
+  "FOOTER.PRIVACY_POLICY": "Kebijakan Pribadi",
+  "FOOTER.DEVELOPER": "Developer",
+  "FOOTER.SPECIAL_LETTER": "Pesan Khusus",
+  "FOOTER.COPYRIGHT": "Hak Cipta 2023 • Semua Hak Dilindungi Undang-Undang LuxSpace"
 }

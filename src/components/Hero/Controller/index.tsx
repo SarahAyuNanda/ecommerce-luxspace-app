@@ -8,7 +8,7 @@ const HeroController = () => {
   const translation = useMemo(() => ({
     title: t('CONTENT.HERO.TITLE'),
     subtitle: t('CONTENT.HERO.SUBTITLE'),
-    explore_now: t('EXPLORE_NOW')
+    explore_now: t('CONTENT.HERO.EXPLORE_NOW')
   }), [t]) 
 
   /* ------------------------------------ RETURN ------------------------------------- */

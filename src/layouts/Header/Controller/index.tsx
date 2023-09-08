@@ -1,19 +1,21 @@
 import INavigationItem from 'layouts/Header/Model';
 import React, { useEffect, useMemo, useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import { languages } from 'utils/18next/model';
 
 const HeaderController = () => {
   /* ---------------------------------- CUSTOM HOOK ---------------------------------- */
-  const { t } = useTranslation()
+  const { t, i18n } = useTranslation()
 
   const [isShowMenu, setIsShowMenu] = useState(false)
   const [isOnTopPage, setIsOnTopPage] = useState(true)
+  const [isShowDropdownLanguage, setIsShowDropdownLanguage] = useState(false)
 
   const translation = useMemo(() => ({
-    showcase: t('SHOWCASE'),
-    catalog: t('CATALOG'),
-    delivery: t('DELIVERY'),
-    rewards: t('REWARDS'),
+    showcase: t('HEADER.SHOWCASE'),
+    catalog: t('HEADER.CATALOG'),
+    delivery: t('HEADER.DELIVERY'),
+    rewards: t('HEADER.REWARDS'),
   }), [t])
 
   useEffect(() => {
@@ -62,16 +64,26 @@ const HeaderController = () => {
     setIsOnTopPage(position.scrollY === 0)
   }
 
+  const onHandleOpenLanguage = () => setIsShowDropdownLanguage(current => !current)
+
+  const onChangeLanguage = (lang: languages) => {
+    i18n.changeLanguage(lang)
+    setIsShowDropdownLanguage(false)
+  }
+
   /* ------------------------------------ RETURN ------------------------------------- */
   return {
     translation,
     isShowMenu,
     isOnTopPage,
+    isShowDropdownLanguage,
 
     navigationItemList,
 
-    onShowHideNavigationMenu,
     setIsShowMenu,
+    onShowHideNavigationMenu,
+    onHandleOpenLanguage,
+    onChangeLanguage
   };
 };
 
