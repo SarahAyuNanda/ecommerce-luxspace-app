@@ -1,7 +1,9 @@
+import IDIcon from 'assets/icons/id-lang.png';
+import ENIcon from 'assets/icons/en-lang.png';
+import { ILanguageItem } from 'components/DropdownLanguage/Model';
 import INavigationItem from 'layouts/Header/Model';
 import React, { useEffect, useMemo, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { languages } from 'utils/18next/model';
 
 const HeaderController = () => {
   /* ---------------------------------- CUSTOM HOOK ---------------------------------- */
@@ -10,6 +12,7 @@ const HeaderController = () => {
   const [isShowMenu, setIsShowMenu] = useState(false)
   const [isOnTopPage, setIsOnTopPage] = useState(true)
   const [isShowDropdownLanguage, setIsShowDropdownLanguage] = useState(false)
+  const [selectedLanguageIcon, setSelectedLanguageIcon] = useState(ENIcon)
 
   const translation = useMemo(() => ({
     showcase: t('HEADER.SHOWCASE'),
@@ -54,6 +57,11 @@ const HeaderController = () => {
     { label: translation.rewards, path: '/rewards', icon: <RewardIcon /> },
   ]
 
+  const languageItemList: ILanguageItem[] = [
+    { icon: IDIcon, label: 'ID', value: 'id' },
+    { icon: ENIcon, label: 'EN', value: 'en' },
+  ]
+
   /* ------------------------------- HANDLER FUNCTION -------------------------------- */
   const onShowHideNavigationMenu = () => {
     setIsShowMenu(current => !current)
@@ -66,9 +74,12 @@ const HeaderController = () => {
 
   const onHandleOpenLanguage = () => setIsShowDropdownLanguage(current => !current)
 
-  const onChangeLanguage = (lang: languages) => {
-    i18n.changeLanguage(lang)
+  const onChangeLanguage = (e: React.MouseEvent<HTMLLIElement>) => {
+    const { value } = (e.currentTarget as HTMLLIElement).dataset
+    const icon = value === 'en' ? ENIcon : IDIcon
+    i18n.changeLanguage(value)
     setIsShowDropdownLanguage(false)
+    setSelectedLanguageIcon(icon)
   }
 
   /* ------------------------------------ RETURN ------------------------------------- */
@@ -77,8 +88,10 @@ const HeaderController = () => {
     isShowMenu,
     isOnTopPage,
     isShowDropdownLanguage,
+    selectedLanguageIcon,
 
     navigationItemList,
+    languageItemList,
 
     setIsShowMenu,
     onShowHideNavigationMenu,

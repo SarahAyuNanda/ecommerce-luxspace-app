@@ -1,6 +1,5 @@
 import LuxSpaceLogo from 'assets/images/luxspace.png';
-import IDIcon from 'assets/icons/id-lang.png';
-import ENIcon from 'assets/icons/en-lang.png';
+import DropdownLanguageView from 'components/DropdownLanguage/View';
 import NavigationBarView from 'components/NavigationBar/View';
 import HeaderController from 'layouts/Header/Controller';
 import SidemenuView from 'layouts/Sidemenu/View';
@@ -45,22 +44,7 @@ const HeaderView = () => {
               </li>
 
               {/* --------------------------------- LANGUAGE MENU --------------------------------- */}
-              <li className='relative p-1 rounded-full ease-in-out duration-300 active:bg-gray-100 text-neutral-700'>
-                <button id='lang' className='flex items-center justify-center w-8 h-8' onClick={controller.onHandleOpenLanguage}>
-                  <img src={ENIcon} alt='id-lang' className='w-[28px] h-[28px]' />
-                </button>
-                {/* ------------------------------- DROPDOWN LANGUAGE ------------------------------- */}
-                <ul className={`${controller.isShowDropdownLanguage ? 'block' : 'hidden'} absolute flex flex-col z-50 top-10 right-0 w-max bg-white rounded shadow-lg overflow-visible text-neutral-700 font-montserrat ease-in-out duration-700`} aria-orientation='vertical' role='listbox' tabIndex={0}>
-                  <li id='id-lang' onClick={() => controller.onChangeLanguage('id')} className='flex items-center px-3 pt-2 pb-1 gap-2 cursor-pointer hover:bg-gray-100 hover:rounded' role='option' tabIndex={-1} aria-selected>
-                    <img src={IDIcon} alt='id-lang' className='w-[28px] h-[28px]' />
-                    <p>ID</p>
-                  </li>
-                  <li id='en-lang' onClick={() => controller.onChangeLanguage('en')} className='flex items-center px-3 pt-1 pb-2 gap-2 cursor-pointer hover:bg-gray-100 hover:rounded' role='option' tabIndex={-1} aria-selected>
-                    <img src={ENIcon} alt='id-lang' className='w-[28px] h-[28px]' />
-                    <p>EN</p>
-                  </li>
-                </ul>
-              </li>
+              <DropdownLanguageView isShow={controller.isShowDropdownLanguage} value={controller.selectedLanguageIcon} data={controller.languageItemList} onOpen={controller.onHandleOpenLanguage} onSelect={controller.onChangeLanguage} />
             </ul>
 
           </div>
