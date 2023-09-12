@@ -4,7 +4,7 @@ import HeaderView from "layouts/Header/View";
 
 const App = () => {
   return (
-    <div className='container h-screen mx-auto'>
+    <div className='container h-screen mx-auto text-neutral-700'>
       <HeaderView />
       <HeroView />
       <FooterView />

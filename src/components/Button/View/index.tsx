@@ -1,12 +1,13 @@
 import React, { useMemo } from 'react';
 import IButtonProps from 'components/Button/Model';
 
-const ButtonView = ({ label, variant = 'filled', type = 'plain', style = '', children = undefined, onClick }: IButtonProps) => {
+const ButtonView = ({ label, variant = 'filled', type = 'plain', children = undefined, onClick }: IButtonProps) => {
   const { baseVariant, baseType } = useMemo(() => {
     const usedVariant = {
       filled: 'btn-filled',
       outlined: 'btn-outlined',
-      text: 'btn-text'
+      text: 'btn-text',
+      icon: 'btn-icon'
     }
 
     const usedType = {
@@ -21,7 +22,7 @@ const ButtonView = ({ label, variant = 'filled', type = 'plain', style = '', chi
   }, [variant, type])
 
   return (
-    <button type='button' onClick={onClick} className={`text-center w-max h-auto px-8 py-4 font-montserrat ease-in-out duration-150 ${baseVariant} ${baseType} ${style}`}>
+    <button type='button' onClick={onClick} className={`text-center w-max h-max font-montserrat ease-in-out duration-150 ${baseVariant} ${baseType}`}>
       {children ?? label}
     </button>
   );

@@ -5,15 +5,19 @@
 /* --------------------------------- CUSTOM STYLES --------------------------------- */
 @layer components {
   .btn-filled {
-    @apply bg-orchid-pink text-neutral-800 hover:bg-tuscany hover:text-white
+    @apply bg-orchid-pink text-neutral-800 hover:bg-tuscany hover:text-white px-8 py-4
   }
 
   .btn-outlined {
-    @apply bg-white text-orchid-pink
+    @apply bg-white text-orchid-pink px-8 py-4
   }
 
   .btn-text {
-    @apply bg-transparent text-neutral-800
+    @apply bg-transparent text-neutral-800 px-8 py-4
+  }
+
+  .btn-icon {
+    @apply bg-orchid-pink text-neutral-800 p-3 hover:bg-tuscany
   }
 
   .btn-plain {
