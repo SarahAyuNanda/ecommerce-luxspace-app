@@ -1,6 +1,6 @@
-import ISidemenuProps from "layouts/Sidemenu/Model";
+import INavigationMenuProps from "components/NavigationMenu/Model";
 
-const SidemenuView = ({ isOpen = false, data, onClose }: ISidemenuProps) => {
+const NavigationMenuView = ({ isOpen = false, data, onClose }: INavigationMenuProps) => {
   return (
     <aside className={`fixed top-0 right-0 z-10 md:hidden w-screen h-screen flex justify-between items-start flex-row transition ease-in-out duration-700 ${isOpen ? 'translate-y-0' : '-translate-y-full'}`}>
       <div className='relative w-full h-screen py-10 px-7 bg-white shadow-light'>
@@ -27,4 +27,4 @@ const SidemenuView = ({ isOpen = false, data, onClose }: ISidemenuProps) => {
   );
 };
 
-export default SidemenuView;
+export default NavigationMenuView;

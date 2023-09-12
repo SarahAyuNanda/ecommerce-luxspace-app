@@ -1,9 +1,9 @@
 import INavigationItem from "layouts/Header/Model"
 
-interface ISidemenuProps {
+interface INavigationMenuProps {
   isOpen?: boolean,
   data: INavigationItem[],
   onClose: () => void
 }
 
-export default ISidemenuProps
+export default INavigationMenuProps

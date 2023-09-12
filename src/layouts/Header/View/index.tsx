@@ -1,8 +1,8 @@
 import LuxSpaceLogo from 'assets/images/luxspace.png';
 import DropdownLanguageView from 'components/DropdownLanguage/View';
 import NavigationBarView from 'components/NavigationBar/View';
+import NavigationMenuView from 'components/NavigationMenu/View';
 import HeaderController from 'layouts/Header/Controller';
-import SidemenuView from 'layouts/Sidemenu/View';
 
 const HeaderView = () => {
   const controller = HeaderController();
@@ -20,7 +20,7 @@ const HeaderView = () => {
           {/* ----------------------------------- END LOGO ------------------------------------ */}
 
           <NavigationBarView data={controller.navigationItemList} />
-          <SidemenuView isOpen={controller.isShowMenu} data={controller.navigationItemList} onClose={controller.onShowHideNavigationMenu} />
+          <NavigationMenuView isOpen={controller.isShowMenu} data={controller.navigationItemList} onClose={controller.onShowHideNavigationMenu} />
 
           {/* ----------------------------------- ICON MENU ----------------------------------- */}
           <div className='flex justify-end items-center w-auto'>
