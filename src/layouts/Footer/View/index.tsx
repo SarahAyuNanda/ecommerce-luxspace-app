@@ -7,14 +7,14 @@ const FooterView = () => {
   const controller = FooterController()
 
   return (
-    <footer className='flex flex-col justify-center items-center py-12 px-4 md:px-0'>
+    <footer className='flex flex-col justify-center items-center py-12 px-4 gap-8 md:px-0'>
       <div className='mx-auto'>
         <a href='/' className='w-28'>
           <img src={LuxSpaceLogo} alt='Luxspace | Fulfill your house with beautiful furniture' />
         </a>
       </div>
 
-      <div className='w-full flex flex-col py-9 gap-4 md:flex-row md:gap-40'>
+      <div className='w-full flex flex-col gap-4 md:flex-row md:gap-40'>
         <NavigationBottomView data={controller.navigationCategoryItem} />
         <div className='w-full'>
           <h5 className='font-montserrat font-semibold'>{controller.translation.SPECIAL_LETTER}</h5>
